@@ -12,6 +12,10 @@ public class HelloController {
 		String hei = sayHii();
 		return hei;
 	}
+	@RequestMapping("/")
+	public String sayEmpty() {
+		return "Empty";
+	}
 	
 //	@RequestMapping("/hello")
 	public String sayHii() {
